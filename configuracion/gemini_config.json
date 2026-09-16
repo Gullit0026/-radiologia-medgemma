@@ -1,0 +1,27 @@
+{
+    "modelo": "gemini-3.6-flash",
+    "proveedor": "Google Gemini",
+    "tipo_ejecucion": "API",
+    "procesamiento": "Remoto",
+    "gpu_local_requerida": false,
+    "modelo_local_requerido": false,
+    "huggingface_requerido": false,
+    "hf_token_requerido": false,
+    "gemini_api_key_requerida": true,
+    "dataset": "C:\\Users\\Julian\\Documents\\UNI\\semestre_10\\big_data\\LAb_radiologia\\radiologia 1\\data\\archive",
+    "directorio_salida": "C:\\Users\\Julian\\Documents\\UNI\\semestre_10\\big_data\\LAb_radiologia\\radiologia 1\\outputs",
+    "directorio_figuras": "C:\\Users\\Julian\\Documents\\UNI\\semestre_10\\big_data\\LAb_radiologia\\radiologia 1\\outputs\\figuras",
+    "fecha_configuracion": "2026-09-15T20:18:32",
+    "parametros_generacion": {
+        "max_output_tokens": 65536,
+        "top_p": 0.95,
+        "thinking_level": "medium"
+    },
+    "procesamiento_imagen": {
+        "escala_grises": true,
+        "normalizacion": true,
+        "clahe": true,
+        "reduccion_ruido": true,
+        "preservar_original": true
+    }
+}
