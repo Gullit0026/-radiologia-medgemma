@@ -1,0 +1,64 @@
+# ============================================================
+# Radiologia MedGemma + Gemini + Gradio
+# Entorno recomendado: Python 3.11
+# Windows + NVIDIA RTX 50-series
+# ============================================================
+#
+# IMPORTANTE:
+# PyTorch se instala por separado con CUDA 12.8:
+#
+# pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128
+#
+# Después:
+# pip install -r requirements.txt
+#
+
+# --- Hugging Face / MedGemma ---
+transformers>=4.50,<6
+accelerate>=1.0,<2
+huggingface-hub>=0.30,<2
+safetensors>=0.5,<1
+sentencepiece>=0.2,<1
+tokenizers>=0.21,<1
+protobuf>=5,<7
+
+# --- Google Gemini ---
+google-genai>=1.0,<2
+
+# --- Variables de entorno ---
+python-dotenv>=1.0,<2
+
+# --- Interfaz web ---
+gradio>=5,<7
+
+# --- Imagen ---
+Pillow>=10,<13
+opencv-python>=4.10,<5
+
+# --- Ciencia de datos ---
+numpy>=1.26,<3
+pandas>=2.2,<4
+scipy>=1.13,<2
+scikit-learn>=1.5,<2
+matplotlib>=3.9,<4
+
+# --- Audio ---
+soundfile>=0.12,<1
+librosa>=0.10,<1
+
+# --- Utilidades ---
+tqdm>=4.66,<5
+requests>=2.32,<3
+packaging>=24,<27
+psutil>=6,<8
+einops>=0.8,<1
+
+# --- Jupyter / Anaconda ---
+jupyter>=1.1,<2
+notebook>=7.2,<8
+ipykernel>=6.29,<8
+ipywidgets>=8.1,<9
+
+# --- Opcional: cuantización 4/8-bit ---
+# Descomentar solamente si se va a usar BitsAndBytesConfig.
+# bitsandbytes>=0.45,<1
